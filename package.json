@@ -29,6 +29,7 @@
     "clean-deps": "turbo run clean && rm -rf node_modules **/node_modules pnpm-lock.yaml",
     "clean": "rm -rf .turbo; turbo run clean",
     "cy:run": "cypress run",
+    "cy:percy": "percy exec -- pnpm cy:run --spec 'cypress/e2e/demo/demo.cy.ts'",
     "cy:open": "cypress open"
   },
   "devDependencies": {
